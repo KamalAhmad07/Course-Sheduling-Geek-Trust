@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8' ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<h1 id="course-scheduling-management-lld">Course Scheduling Management - LLD</h1>
+		<ul>
+			<li>Machine Coding Problem Statement:  https://www.geektrust.com/coding/detailed/intuit-course-scheduling .</li>
+			<li>This problem is solved during Code with Geektrust Hackathon on June 10 2022. </li>
+			<li>The low level design code reads data input from file . After reading the input commands, processes them &amp; prints output on command line interface.</li>
+			<li>This code has earned all the required badges : Object Modelling , Readability , Tests , Correctness , Build.</li>
+		</ul>
+		<p>
+			<img alt="1658900341032 jpg" border="0" src="https://user-images.githubusercontent.com/28780687/181170158-bcdd63bf-a1a7-48ed-a38f-fc4805656ce2.jpg"/>
+		</p>
+		<h1 id="pre-requisites">Pre-requisites</h1>
+		<ul>
+			<li>Java 1.8/1.11/1.15</li>
+			<li>Maven</li>
+		</ul>
+		<h1 id="how-to-run-the-code">How to run the code</h1>
+		<p>We have provided scripts to execute the code. </p>
+		<p>Use 
+			<code>run.sh</code> if you are Linux/Unix/macOS Operating systems and 
+			<code>run.bat</code> if you are on Windows.  Both the files run the commands silently and prints only output from the input file 
+			<code>sample_input/input1.txt</code>. You are supposed to add the input commands in the file from the appropriate problem statement. 
+		</p>
+		<p>Internally both the scripts run the following commands </p>
+		<ul>
+			<li>
+				<code>mvn clean install -DskipTests assembly:single -q</code> - This will create a jar file 
+				<code>geektrust.jar</code> in the 
+				<code>target</code> folder.
+			</li>
+			<li>
+				<code>java -jar target/geektrust.jar sample_input/input1.txt</code> - This will execute the jar file passing in the sample input file as the command line argument
+			</li>
+		</ul>
+		<p> We expect your program to take the location to the text file as parameter. Input needs to be read from a text file, and output should be printed to the console. The text file will contain only commands in the format prescribed by the respective problem.</p>
+		<p> Use the pom.xml provided along with this project. Please change the main class entry (
+			<code>&lt;mainClass&gt;com.example.geektrust.Main&lt;/mainClass&gt;</code>) in the pom.xml if your main class has changed.
+		</p>
+		<p> # Running the code for multiple test cases</p>
+		<p> Please fill 
+			<code>input1.txt</code> and 
+			<code>input2.txt</code> with the input commands and use those files in 
+			<code>run.bat</code> or 
+			<code>run.sh</code>. Replace 
+			<code>java -jar target/geektrust.jar sample_input/input1.txt</code> with 
+			<code>java -jar target/geektrust.jar sample_input/input2.txt</code> to run the test case from the second file. 
+		</p>
+		<p> # How to execute the unit tests</p>
+		<p> 
+			<code>mvn clean test</code> will execute the unit test cases.
+		</p>
+		<h1 id="help">Help</h1>
+		<p>You can refer our help documents 
+			<a href="https://help.geektrust.com">here</a>
+			You can read build instructions 
+			<a href="https://github.com/geektrust/coding-problem-artefacts/tree/master/Java">here</a>
+		</p>
+	</body>
+</html>
